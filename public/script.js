@@ -1,4 +1,3 @@
-alert("Script Loaded");
 console.log("Portfolio Website Loaded Successfully");
 
 const form = document.querySelector("form");
