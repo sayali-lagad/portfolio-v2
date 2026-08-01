@@ -98,3 +98,23 @@ const revealObserver = new IntersectionObserver((entries) => {
 });
 
 revealEls.forEach(el => revealObserver.observe(el));
+
+/* ============================
+   ANIMATED SKILL PROGRESS BARS
+============================ */
+const skillFills = document.querySelectorAll(".skill-fill");
+
+const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const fill = entry.target;
+            const targetWidth = fill.getAttribute("data-width");
+            fill.style.width = targetWidth + "%";
+            skillObserver.unobserve(fill);
+        }
+    });
+}, {
+    threshold: 0.4
+});
+
+skillFills.forEach(fill => skillObserver.observe(fill));
