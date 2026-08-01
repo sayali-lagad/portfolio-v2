@@ -1,150 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayali Lagad | Full Stack Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <h2>Sayali Lagad</h2>
+<div class="bg-glow"></div>
+
+<nav id="navbar">
+    <h2>Sayali<span>.</span></h2>
 
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#social" class="nav-link">Connect</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
 </nav>
 
 <section id="home">
+    <div class="hero-content reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Sayali Lagad</h1>
+        <h2 class="hero-role">Full Stack Web Development Intern <span class="dot">•</span> Aspiring Software Developer</h2>
 
-    <h1>Hello, I'm Sayali</h1>
+        <p class="hero-text">
+            Passionate Full Stack Web Development Intern with a strong interest in building responsive websites and web applications. Currently learning modern frontend and backend technologies while working on real-world projects.
+        </p>
 
-    <h2>Full Stack Web Development Intern | Aspiring Software Developer</h2>
-
-<p>
-    Passionate Full Stack Web Development Intern with a strong interest in building responsive websites and web applications. Currently learning modern frontend and backend technologies while working on real-world projects.
-</p>
-
-    <a href="#projects">
-        <button>View My Work</button>
-    </a>
-
-    <a href="#contact">
-        <button>Contact Me</button>
-    </a>
-
+        <div class="hero-buttons">
+            <a href="#projects"><button class="btn-primary">View My Work</button></a>
+            <a href="#contact"><button class="btn-secondary">Contact Me</button></a>
+        </div>
+    </div>
 </section>
 
 <section id="about">
+    <div class="section-heading reveal">
+        <span class="section-tag">About</span>
+        <h2>About Me</h2>
+    </div>
 
-    <h2>About Me</h2>
+    <div class="about-grid">
+        <p class="reveal">
+            Hello! I'm Sayali Lagad, a Full Stack Web Development Intern and a student at D. Y. Patil International University.
+        </p>
 
-    <p>
-        Hello! I'm Sayali Lagad, a Full Stack Web Development Intern and a student at D. Y. Patil International University.
-    </p>
+        <p class="reveal">
+            I am passionate about learning web development and creating modern, responsive websites. I enjoy working with HTML, CSS, JavaScript, Node.js and MongoDB.
+        </p>
 
-    <p>
-        I am passionate about learning web development and creating modern, responsive websites. I enjoy working with HTML, CSS, JavaScript, Node.js and MongoDB.
-    </p>
+        <p class="reveal">
+            Through my internship projects and personal learning journey, I have gained hands-on experience in frontend and backend development.
+        </p>
 
-    <p>
-        Through my internship projects and personal learning journey, I have gained hands-on experience in frontend and backend development.
-    </p>
-
-    <p>
-        My goal is to become a skilled software developer and continue building projects that solve real-world problems.
-    </p>
-
+        <p class="reveal">
+            My goal is to become a skilled software developer and continue building projects that solve real-world problems.
+        </p>
+    </div>
 </section>
 
 <section id="education">
+    <div class="section-heading reveal">
+        <span class="section-tag">Education</span>
+        <h2>Education</h2>
+    </div>
 
-    <h2>Education</h2>
-
-    <h3>D. Y. Patil International University</h3>
-
-    <p>
-        Pursuing higher education with a strong interest in software development, web technologies, and programming.
-    </p>
-
+    <div class="education-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div>
+            <h3>D. Y. Patil International University</h3>
+            <p>
+                Pursuing higher education with a strong interest in software development, web technologies, and programming.
+            </p>
+        </div>
+    </div>
 </section>
 
 <section id="skills">
-    <h2>My Skills</h2>
+    <div class="section-heading reveal">
+        <span class="section-tag">Skills</span>
+        <h2>My Skills</h2>
+    </div>
 
     <div class="skills">
-
-    <span>HTML</span>
-
-    <span>CSS</span>
-
-    <span>JavaScript</span>
-
-    <span>Node.js</span>
-
-    <span>MongoDB</span>
-
-    <span>Express.js</span>
-
-    <span>Git</span>
-
-    <span>GitHub</span>
-
-    <span>Responsive Design</span>
-
-</div>
+        <div class="skill-card reveal"><span>HTML</span></div>
+        <div class="skill-card reveal"><span>CSS</span></div>
+        <div class="skill-card reveal"><span>JavaScript</span></div>
+        <div class="skill-card reveal"><span>Node.js</span></div>
+        <div class="skill-card reveal"><span>MongoDB</span></div>
+        <div class="skill-card reveal"><span>Express.js</span></div>
+        <div class="skill-card reveal"><span>Git</span></div>
+        <div class="skill-card reveal"><span>GitHub</span></div>
+        <div class="skill-card reveal"><span>Responsive Design</span></div>
+    </div>
 </section>
 
 <section id="projects">
-    <h2>My Projects</h2>
-
-    <div>
-        <h3>Portfolio Website</h3>
-        <p>
-        A responsive personal portfolio website developed using HTML, CSS, and JavaScript. It includes a navigation menu, skills section, projects section, contact form, and smooth scrolling functionality.
-        </p>
+    <div class="section-heading reveal">
+        <span class="section-tag">Projects</span>
+        <h2>My Projects</h2>
     </div>
 
-    <div>
-        <h3>Student Management System</h3>
-        <p>A simple system to manage student records and information.</p>
+    <div class="projects-grid">
+
+        <div class="project-card reveal">
+            <div class="project-card-top">
+                <span class="project-icon">💼</span>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive personal portfolio website developed using HTML, CSS, and JavaScript. It includes a navigation menu, skills section, projects section, contact form, and smooth scrolling functionality.
+            </p>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-card-top">
+                <span class="project-icon">🎓</span>
+            </div>
+            <h3>Student Management System</h3>
+            <p>A simple system to manage student records and information.</p>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-card-top">
+                <span class="project-icon">🌦️</span>
+            </div>
+            <h3>Weather App</h3>
+            <p>A weather application that displays weather information using APIs.</p>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-card-top">
+                <span class="project-icon">✅</span>
+            </div>
+            <h3>To-Do List App</h3>
+            <p>A task management application for organizing daily activities.</p>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-card-top">
+                <span class="project-icon">🛒</span>
+            </div>
+            <h3>E-Commerce Landing Page</h3>
+            <p>A responsive shopping landing page built using HTML and CSS.</p>
+        </div>
+
     </div>
-    <div>
-    <h3>Weather App</h3>
-    <p>A weather application that displays weather information using APIs.</p>
-</div>
-
-<div>
-    <h3>To-Do List App</h3>
-    <p>A task management application for organizing daily activities.</p>
-</div>
-
-<div>
-    <h3>E-Commerce Landing Page</h3>
-    <p>A responsive shopping landing page built using HTML and CSS.</p>
-</div>
 </section>
 
 <section id="social">
+    <div class="section-heading reveal">
+        <span class="section-tag">Connect</span>
+        <h2>Connect With Me</h2>
+    </div>
 
-    <h2>Connect With Me</h2>
-
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/sayali-lagad-a4a1253b9/" target="_blank">
+    <div class="social-card reveal">
+        <div class="social-icon">in</div>
+        <div class="social-text">
+            <h3>LinkedIn</h3>
+            <p>Let's connect and grow our professional network together.</p>
+        </div>
+        <a href="https://www.linkedin.com/in/sayali-lagad-a4a1253b9/" target="_blank" class="btn-primary social-btn">
             Visit My LinkedIn Profile
         </a>
-    </p>
-
+    </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Me</h2>
+    <div class="section-heading reveal">
+        <span class="section-tag">Contact</span>
+        <h2>Contact Me</h2>
+    </div>
 
-    <form>
+    <form class="contact-form reveal">
 
         <input type="text" placeholder="Your Name">
 
@@ -158,7 +200,7 @@
 
         <br><br>
 
-        <button type="submit">
+        <button type="submit" class="btn-primary">
             Send Message 🚀
         </button>
 
@@ -167,11 +209,13 @@
 </section>
 
 <footer>
-
-    <p>
-        © 2025 Sayali Lagad | Full Stack Web Developer
-    </p>
-
+    <div class="footer-content">
+        <h2>Sayali<span>.</span></h2>
+        <p>© 2025 Sayali Lagad | Full Stack Web Developer</p>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/sayali-lagad-a4a1253b9/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
 </footer>
 
 <script src="script.js"></script>
